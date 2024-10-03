@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UOL-SE-FYP Announcements</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#">UOL-SE-FYP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fyp_updates.html">FYP Updates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="announcements.html">Announcements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms.html">Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="documentation_template.html">Documentation Template</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>UOL-SE-FINAL YEAR PROJECT</h1>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <!-- Section 1 -->
+            <div class="fyp-section mb-4">
+                <h3 class="section-title">IMPORTANT ANNOUNCEMENT</h3>
+                <h3 class="section-title">FYP PHASE-II PROJECT STATUS AND SUBMISSION OF HARD BINDING (FYP PHASE-II)</h3>
+                <p class="section-subtitle">Dear Students,</p>
+                <p>PROJECT QUALIFIED FOR GRADING:</p>
+                <p>Students are instructed to go ahead with the submission of "<span class="highlight">THREE HARD BINDINGS. SAMPLE ATTACHED.</span>"</p>
+                <p>PROJECT WITH MINOR REVISIONS REQUIRED:</p>
+                <p>If minor changes required in the document and/or in the project), then Projects should be evaluated and approved by both the supervisor and evaluators within the mentioned time frame.</p>
+                <p><span class="highlight">Re-Submission Due Date for students: 07/02/2024</span></p>
+                <p>PROJECT WITH MAJOR REVISIONS REQUIRED:</p>
+                <p>If major changes required in the document and/or in the project), then Projects should be evaluated and approved by both the supervisor and evaluators within the mentioned time frame.</p>
+                <p><span class="highlight">Re-Submission Due Date for students: 22/02/2024</span></p>
+                <img src="imgs/phase-II project status.jpg" alt="FYP Phase-II Project Status" class="img-fluid mx-auto d-block mt-5" />
+                <p>FYP Phase-II Project Status</p>
+            </div>
+
+            
+
+        <footer></footer>
+
+        <script>
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll(".nav-link");
+            const menuLength = menuItem.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].classList.add("active");
+                } else {
+                    menuItem[i].classList.remove("active");
+                }
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>

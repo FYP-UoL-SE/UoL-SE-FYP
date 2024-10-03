@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UOL-SE-FYP Forms</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#">UOL-SE-FYP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fyp_updates.html">FYP Updates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="announcements.html">Announcements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms.html">Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="documentation_template.html">Documentation Template</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>UOL-SE-FINAL YEAR PROJECT</h1>
+            </div>
+        </div>
+
+        <!-- Forms List Section -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Form 1 -->
+                    <div class="mb-4">
+                        <h5>FORM-1 Project Proposal Form.doc</h5>
+                        <p>Download: <a href="#" class="text-primary">FORM-1 Project Proposal Form.doc</a></p>
+                    </div>
+
+                    <!-- Form 2 -->
+                    <div class="mb-4">
+                        <h5>FORM-2 Request for Change of FYP Title.doc</h5>
+                        <p>Download: <a href="#" class="text-primary">FORM-2 Request for Change of FYP Title.doc</a></p>
+                    </div>
+
+                    <!-- Form 3 -->
+                    <div class="mb-4">
+                        <h5>FORM-3 Supervisor Withdrawal Form.docx</h5>
+                        <p>Download: <a href="#" class="text-primary">FORM-3 Supervisor Withdrawal Form.docx</a></p>
+                    </div>
+
+                    <!-- Form 4 -->
+                    <div class="mb-4">
+                        <h5>FORM-4 Advisor Volunteer Form.doc</h5>
+                        <p>Download: <a href="#" class="text-primary">FORM-4 Advisor Volunteer Form.doc</a></p>
+                    </div>
+
+                    <!-- Form 5 -->
+                    <div class="mb-4">
+                        <h5>FORM-5 Project Extension Form.docx</h5>
+                        <p>Download: <a href="#" class="text-primary">FORM-5 Project Extension Form.docx</a></p>
+                    </div>
+
+                    <!-- Form 6 -->
+                    <div class="mb-4">
+                        <h5>FORM-6 Follow-Up Form.docx</h5>
+                        <p>Download: <a href="#" class="text-primary">FORM-6 Follow-Up Form.docx</a></p>
+                    </div>
+
+                    <!-- Form 8 -->
+                    <div class="mb-4">
+                        <h5>FORM-8 Final Evaluation Request Form.doc</h5>
+                        <p>Download: <a href="#" class="text-primary">FORM-8 Final Evaluation Request Form.doc</a></p>
+                    </div>
+
+                    <!-- Form 9 -->
+                    <div class="mb-4">
+                        <h5>FORM-9 External Advisor Request Form.doc</h5>
+                        <p>Download: <a href="#" class="text-primary">FORM-9 External Advisor Request Form.doc</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer></footer>
+
+        <script>
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll(".nav-link");
+            const menuLength = menuItem.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].classList.add("active");
+                } else {
+                    menuItem[i].classList.remove("active");
+                }
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>

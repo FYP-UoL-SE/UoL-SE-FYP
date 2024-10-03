@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UOL-SE-FYP</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="index.html">UOL-SE-FYP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fyp_updates.html">FYP Updates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="announcements.html">Announcements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms.html">Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="documentation_template.html">Documentation Template</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>UOL-SE-FINAL YEAR PROJECT</h1>
+            </div>
+        </div>
+
+        <section class="university-info">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <img src="img/uol_logo.PNG" alt="The University of Lahore Logo" class="img-fluid mx-auto d-block" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/se_logo.PNG" alt="Department of Software Engineering Logo" class="img-fluid mx-auto d-block" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer></footer>
+
+        <script>
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll(".nav-link");
+            const menuLength = menuItem.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].classList.add("active");
+                } else {
+                    menuItem[i].classList.remove("active");
+                }
+            }
+        </script>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
